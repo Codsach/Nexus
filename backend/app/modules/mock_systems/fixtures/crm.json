@@ -1,0 +1,139 @@
+[
+  {
+    "customer_id": "C001",
+    "name": "Sarah Mitchell",
+    "email": "sarah.mitchell@techcorp.io",
+    "tier": "Premium",
+    "account_status": "active",
+    "join_date": "2023-03-15",
+    "total_spend_usd": 2847.50,
+    "notes": "Long-time premium customer, generally satisfied, had one billing dispute in 2024 resolved quickly.",
+    "contact_history": [
+      {"date": "2026-08-20", "channel": "chat", "topic": "Billing question", "resolved": true},
+      {"date": "2026-06-10", "channel": "email", "topic": "Feature request", "resolved": true}
+    ]
+  },
+  {
+    "customer_id": "C002",
+    "name": "Marcus Chen",
+    "email": "mchen@innovateai.com",
+    "tier": "Enterprise",
+    "account_status": "active",
+    "join_date": "2022-01-08",
+    "total_spend_usd": 18420.00,
+    "notes": "Key enterprise account. POC is Marcus Chen, CTO. Has SLA agreement for 2hr response time.",
+    "contact_history": [
+      {"date": "2026-09-01", "channel": "phone", "topic": "API rate limits", "resolved": true},
+      {"date": "2026-07-15", "channel": "chat", "topic": "Billing review", "resolved": true},
+      {"date": "2026-05-20", "channel": "email", "topic": "Contract renewal", "resolved": true}
+    ]
+  },
+  {
+    "customer_id": "C003",
+    "name": "Priya Sharma",
+    "email": "priya.s@designhub.co",
+    "tier": "Standard",
+    "account_status": "active",
+    "join_date": "2024-07-22",
+    "total_spend_usd": 347.00,
+    "notes": "New customer, first billing issue reported this week. Has open order inquiry simultaneously.",
+    "contact_history": [
+      {"date": "2026-09-12", "channel": "chat", "topic": "Order status", "resolved": false}
+    ]
+  },
+  {
+    "customer_id": "C004",
+    "name": "James Kowalski",
+    "email": "j.kowalski@freelance.net",
+    "tier": "Standard",
+    "account_status": "at_risk",
+    "join_date": "2023-11-30",
+    "total_spend_usd": 587.20,
+    "notes": "3rd support ticket in 60 days. Negative sentiment trend. Churn risk: HIGH.",
+    "contact_history": [
+      {"date": "2026-09-10", "channel": "chat", "topic": "Missing package", "resolved": false},
+      {"date": "2026-08-28", "channel": "email", "topic": "Billing overcharge", "resolved": true},
+      {"date": "2026-08-05", "channel": "chat", "topic": "App crash", "resolved": true}
+    ]
+  },
+  {
+    "customer_id": "C005",
+    "name": "Elena Volkov",
+    "email": "elena@volkov-studio.ru",
+    "tier": "Premium",
+    "account_status": "at_risk",
+    "join_date": "2023-05-14",
+    "total_spend_usd": 3210.00,
+    "notes": "Escalating frustration over 4 tickets in 90 days. Last agent interaction rated 2/5. Churn risk: CRITICAL.",
+    "contact_history": [
+      {"date": "2026-09-08", "channel": "chat", "topic": "Duplicate charge", "resolved": false},
+      {"date": "2026-08-22", "channel": "email", "topic": "Delivery delay", "resolved": true},
+      {"date": "2026-08-01", "channel": "chat", "topic": "Account suspension", "resolved": true},
+      {"date": "2026-07-12", "channel": "phone", "topic": "Wrong item received", "resolved": true}
+    ]
+  },
+  {
+    "customer_id": "C006",
+    "name": "Daniel Okonkwo",
+    "email": "d.okonkwo@lagostech.ng",
+    "tier": "Standard",
+    "account_status": "active",
+    "join_date": "2024-02-18",
+    "total_spend_usd": 214.50,
+    "notes": "Occasional technical questions. Generally positive experience.",
+    "contact_history": [
+      {"date": "2026-07-30", "channel": "chat", "topic": "Login issue", "resolved": true}
+    ]
+  },
+  {
+    "customer_id": "C007",
+    "name": "Aisha Nakamura",
+    "email": "aisha@nakamura-consulting.jp",
+    "tier": "Enterprise",
+    "account_status": "active",
+    "join_date": "2021-08-03",
+    "total_spend_usd": 31500.00,
+    "notes": "Longest-tenured enterprise customer. Complex account with multiple sub-users. High LTV.",
+    "contact_history": [
+      {"date": "2026-09-05", "channel": "email", "topic": "Multi-user permissions issue", "resolved": false},
+      {"date": "2026-06-20", "channel": "phone", "topic": "Annual review", "resolved": true}
+    ]
+  },
+  {
+    "customer_id": "C008",
+    "name": "Roberto Ferrara",
+    "email": "roberto.f@milanodesign.it",
+    "tier": "Standard",
+    "account_status": "suspended",
+    "join_date": "2025-01-10",
+    "total_spend_usd": 128.00,
+    "notes": "Account suspended due to payment failure (card expired). Has not updated payment method.",
+    "contact_history": [
+      {"date": "2026-09-11", "channel": "chat", "topic": "Account suspended", "resolved": false}
+    ]
+  },
+  {
+    "customer_id": "C009",
+    "name": "Fatima Al-Rashid",
+    "email": "fatima@alrashid-ventures.ae",
+    "tier": "Premium",
+    "account_status": "active",
+    "join_date": "2022-09-25",
+    "total_spend_usd": 4760.00,
+    "notes": "Premium customer, very satisfied, rarely contacts support. When she does, it is serious.",
+    "contact_history": [
+      {"date": "2026-04-15", "channel": "email", "topic": "Data export request", "resolved": true}
+    ]
+  },
+  {
+    "customer_id": "C010",
+    "name": "Tyler Brooks",
+    "email": "tyler.b@startuplab.io",
+    "tier": "Standard",
+    "account_status": "active",
+    "join_date": "2025-06-01",
+    "total_spend_usd": 89.00,
+    "notes": "New customer, student plan. First contact ever. Likely technical question.",
+    "contact_history": []
+  }
+]

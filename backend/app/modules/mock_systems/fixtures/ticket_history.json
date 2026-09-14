@@ -1,0 +1,97 @@
+[
+  {
+    "record_id": "TH-001", "customer_id": "C001", "ticket_id": "TKT-2026-0823-001",
+    "date": "2026-08-20", "category": "billing", "issue_summary": "Question about invoice breakdown for August",
+    "resolution": "Agent explained itemized charges. Customer satisfied.",
+    "resolved_by": "auto", "sentiment_at_open": "neutral", "sentiment_at_close": "positive",
+    "resolution_time_hours": 0.25
+  },
+  {
+    "record_id": "TH-002", "customer_id": "C004", "ticket_id": "TKT-2026-0805-001",
+    "date": "2026-08-05", "category": "technical",
+    "issue_summary": "App crashes on startup after update to v3.2.1",
+    "resolution": "Advised clear cache + rollback to v3.2.0. Fixed after update to v3.2.2.",
+    "resolved_by": "auto", "sentiment_at_open": "negative", "sentiment_at_close": "neutral",
+    "resolution_time_hours": 2.5
+  },
+  {
+    "record_id": "TH-003", "customer_id": "C004", "ticket_id": "TKT-2026-0828-001",
+    "date": "2026-08-28", "category": "billing",
+    "issue_summary": "Overcharged $39.98 instead of $19.99 for August subscription",
+    "resolution": "Confirmed system error. Issued $19.99 refund. Ticket escalated to billing team for root cause.",
+    "resolved_by": "human", "sentiment_at_open": "negative", "sentiment_at_close": "neutral",
+    "resolution_time_hours": 4.0
+  },
+  {
+    "record_id": "TH-004", "customer_id": "C004", "ticket_id": "TKT-2026-0910-001",
+    "date": "2026-09-10", "category": "order",
+    "issue_summary": "Package ORD-2026-C004-002 delayed at Memphis hub since Sep 5",
+    "resolution": "Pending — customer very frustrated, third issue in 60 days. Churn risk flagged.",
+    "resolved_by": "auto", "sentiment_at_open": "very_negative", "sentiment_at_close": "negative",
+    "resolution_time_hours": 0.0
+  },
+  {
+    "record_id": "TH-005", "customer_id": "C005", "ticket_id": "TKT-2026-0712-001",
+    "date": "2026-07-12", "category": "order",
+    "issue_summary": "Wrong item received — ordered blue, received red camera kit",
+    "resolution": "Return label sent. Correct item reshipped with expedited delivery.",
+    "resolved_by": "human", "sentiment_at_open": "negative", "sentiment_at_close": "neutral",
+    "resolution_time_hours": 6.0
+  },
+  {
+    "record_id": "TH-006", "customer_id": "C005", "ticket_id": "TKT-2026-0801-001",
+    "date": "2026-08-01", "category": "account",
+    "issue_summary": "Account suspended — cannot login",
+    "resolution": "Account was incorrectly flagged by fraud system (VPN usage). Cleared and restored.",
+    "resolved_by": "human", "sentiment_at_open": "very_negative", "sentiment_at_close": "negative",
+    "resolution_time_hours": 3.0
+  },
+  {
+    "record_id": "TH-007", "customer_id": "C005", "ticket_id": "TKT-2026-0822-001",
+    "date": "2026-08-22", "category": "order",
+    "issue_summary": "Expected delivery of return replacement was 5 days late",
+    "resolution": "Apologized, issued 15% discount on next purchase. Customer still dissatisfied.",
+    "resolved_by": "auto", "sentiment_at_open": "negative", "sentiment_at_close": "negative",
+    "resolution_time_hours": 1.0
+  },
+  {
+    "record_id": "TH-008", "customer_id": "C005", "ticket_id": "TKT-2026-0908-001",
+    "date": "2026-09-08", "category": "billing",
+    "issue_summary": "Duplicate charge of $49.99 — charged twice on Sep 8 for same subscription",
+    "resolution": "Pending escalation. 4th issue in 90 days. CRITICAL churn risk.",
+    "resolved_by": "auto", "sentiment_at_open": "very_negative", "sentiment_at_close": "very_negative",
+    "resolution_time_hours": 0.0
+  },
+  {
+    "record_id": "TH-009", "customer_id": "C006", "ticket_id": "TKT-2026-0730-001",
+    "date": "2026-07-30", "category": "technical",
+    "issue_summary": "Cannot login — password reset not working",
+    "resolution": "Password reset email was going to spam. Resent with correct sender domain. Resolved.",
+    "resolved_by": "auto", "sentiment_at_open": "neutral", "sentiment_at_close": "positive",
+    "resolution_time_hours": 0.5
+  },
+  {
+    "record_id": "TH-010", "customer_id": "C002", "ticket_id": "TKT-2026-0901-001",
+    "date": "2026-09-01", "category": "technical",
+    "issue_summary": "API rate limit exceeded unexpectedly — no prior warning",
+    "resolution": "Enterprise plan rate limit was incorrectly set to Standard tier after system migration. Fixed immediately. Granted 30-day rate limit waiver.",
+    "resolved_by": "human", "sentiment_at_open": "negative", "sentiment_at_close": "positive",
+    "resolution_time_hours": 1.5
+  },
+  {
+    "record_id": "TH-011", "customer_id": "C007", "ticket_id": "TKT-2026-0905-001",
+    "date": "2026-09-05", "category": "account",
+    "issue_summary": "5 sub-users cannot access their accounts after a permissions change",
+    "resolution": "Pending — complex multi-user permissions bug identified in Enterprise admin panel. Engineering team engaged.",
+    "resolved_by": "auto", "sentiment_at_open": "negative", "sentiment_at_close": "negative",
+    "resolution_time_hours": 0.0
+  },
+  {
+    "record_id": "TH-012", "customer_id": "C008", "ticket_id": "TKT-2026-0911-001",
+    "date": "2026-09-11", "category": "account",
+    "issue_summary": "Account suspended — says payment failed but card should be valid",
+    "resolution": "Card on file expired Aug 2026. Advised customer to update payment method. Account will reactivate automatically within 24h.",
+    "resolved_by": "auto", "sentiment_at_open": "negative", "sentiment_at_close": "neutral",
+    "resolution_time_hours": 0.5
+  }
+]

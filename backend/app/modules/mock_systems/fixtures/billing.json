@@ -1,0 +1,137 @@
+{
+  "C001": {
+    "customer_id": "C001",
+    "subscription_plan": "Premium Monthly",
+    "subscription_status": "active",
+    "next_billing_date": "2026-10-15",
+    "payment_method": "Visa ending 4242",
+    "total_refunds_usd": 29.99,
+    "disputed_charges": [],
+    "transactions": [
+      {"transaction_id": "TXN-20260915-001", "date": "2026-09-15", "amount_usd": 49.99, "description": "Premium Monthly Subscription", "status": "completed", "reference": "SUB-2026-09"},
+      {"transaction_id": "TXN-20260915-002", "date": "2026-09-15", "amount_usd": 49.99, "description": "Premium Monthly Subscription", "status": "completed", "reference": "SUB-2026-09-DUP"},
+      {"transaction_id": "TXN-20260815-001", "date": "2026-08-15", "amount_usd": 49.99, "description": "Premium Monthly Subscription", "status": "completed", "reference": "SUB-2026-08"},
+      {"transaction_id": "TXN-20260715-001", "date": "2026-07-15", "amount_usd": 49.99, "description": "Premium Monthly Subscription", "status": "completed", "reference": "SUB-2026-07"},
+      {"transaction_id": "TXN-20260615-001", "date": "2026-06-15", "amount_usd": 49.99, "description": "Premium Monthly Subscription", "status": "completed", "reference": "SUB-2026-06"}
+    ]
+  },
+  "C002": {
+    "customer_id": "C002",
+    "subscription_plan": "Enterprise Annual",
+    "subscription_status": "active",
+    "next_billing_date": "2027-01-08",
+    "payment_method": "Corporate Amex ending 1008",
+    "total_refunds_usd": 0.00,
+    "disputed_charges": [],
+    "transactions": [
+      {"transaction_id": "TXN-20260108-001", "date": "2026-01-08", "amount_usd": 12000.00, "description": "Enterprise Annual License", "status": "completed", "reference": "ENT-2026"},
+      {"transaction_id": "TXN-20260108-002", "date": "2026-01-08", "amount_usd": 2400.00, "description": "Additional Seats (20)", "status": "completed", "reference": "SEATS-2026"},
+      {"transaction_id": "TXN-20260108-003", "date": "2026-01-08", "amount_usd": 4020.00, "description": "Priority Support Add-on", "status": "completed", "reference": "SUPPORT-2026"}
+    ]
+  },
+  "C003": {
+    "customer_id": "C003",
+    "subscription_plan": "Standard Monthly",
+    "subscription_status": "active",
+    "next_billing_date": "2026-10-22",
+    "payment_method": "Mastercard ending 5588",
+    "total_refunds_usd": 0.00,
+    "disputed_charges": ["TXN-20260922-001"],
+    "transactions": [
+      {"transaction_id": "TXN-20260922-001", "date": "2026-09-22", "amount_usd": 19.99, "description": "Standard Monthly Subscription", "status": "disputed", "reference": "SUB-2026-09"},
+      {"transaction_id": "TXN-20260822-001", "date": "2026-08-22", "amount_usd": 19.99, "description": "Standard Monthly Subscription", "status": "completed", "reference": "SUB-2026-08"}
+    ]
+  },
+  "C004": {
+    "customer_id": "C004",
+    "subscription_plan": "Standard Monthly",
+    "subscription_status": "active",
+    "next_billing_date": "2026-10-30",
+    "payment_method": "Visa ending 7734",
+    "total_refunds_usd": 19.99,
+    "disputed_charges": [],
+    "transactions": [
+      {"transaction_id": "TXN-20260828-001", "date": "2026-08-28", "amount_usd": 39.98, "description": "Standard Monthly Subscription (overcharged — fixed)", "status": "refunded", "reference": "SUB-2026-08-ERR"},
+      {"transaction_id": "TXN-20260828-002", "date": "2026-08-28", "amount_usd": 19.99, "description": "Standard Monthly Subscription (corrected)", "status": "completed", "reference": "SUB-2026-08"},
+      {"transaction_id": "TXN-20260730-001", "date": "2026-07-30", "amount_usd": 19.99, "description": "Standard Monthly Subscription", "status": "completed", "reference": "SUB-2026-07"}
+    ]
+  },
+  "C005": {
+    "customer_id": "C005",
+    "subscription_plan": "Premium Monthly",
+    "subscription_status": "active",
+    "next_billing_date": "2026-10-14",
+    "payment_method": "Visa ending 3311",
+    "total_refunds_usd": 49.99,
+    "disputed_charges": ["TXN-20260908-001", "TXN-20260908-002"],
+    "transactions": [
+      {"transaction_id": "TXN-20260908-001", "date": "2026-09-08", "amount_usd": 49.99, "description": "Premium Monthly Subscription", "status": "disputed", "reference": "SUB-2026-09"},
+      {"transaction_id": "TXN-20260908-002", "date": "2026-09-08", "amount_usd": 49.99, "description": "Premium Monthly Subscription", "status": "disputed", "reference": "SUB-2026-09-DUP"},
+      {"transaction_id": "TXN-20260814-001", "date": "2026-08-14", "amount_usd": 49.99, "description": "Premium Monthly Subscription", "status": "completed", "reference": "SUB-2026-08"},
+      {"transaction_id": "TXN-20260714-001", "date": "2026-07-14", "amount_usd": 49.99, "description": "Premium Monthly Subscription", "status": "completed", "reference": "SUB-2026-07"}
+    ]
+  },
+  "C006": {
+    "customer_id": "C006",
+    "subscription_plan": "Standard Monthly",
+    "subscription_status": "active",
+    "next_billing_date": "2026-10-18",
+    "payment_method": "PayPal",
+    "total_refunds_usd": 0.00,
+    "disputed_charges": [],
+    "transactions": [
+      {"transaction_id": "TXN-20260918-001", "date": "2026-09-18", "amount_usd": 19.99, "description": "Standard Monthly Subscription", "status": "completed", "reference": "SUB-2026-09"},
+      {"transaction_id": "TXN-20260818-001", "date": "2026-08-18", "amount_usd": 19.99, "description": "Standard Monthly Subscription", "status": "completed", "reference": "SUB-2026-08"}
+    ]
+  },
+  "C007": {
+    "customer_id": "C007",
+    "subscription_plan": "Enterprise Annual",
+    "subscription_status": "active",
+    "next_billing_date": "2027-08-03",
+    "payment_method": "Wire Transfer",
+    "total_refunds_usd": 500.00,
+    "disputed_charges": [],
+    "transactions": [
+      {"transaction_id": "TXN-20260803-001", "date": "2026-08-03", "amount_usd": 18000.00, "description": "Enterprise Annual Renewal", "status": "completed", "reference": "ENT-2026-REN"},
+      {"transaction_id": "TXN-20260803-002", "date": "2026-08-03", "amount_usd": 6000.00, "description": "Enterprise Support Package", "status": "completed", "reference": "ENT-SUPP-2026"}
+    ]
+  },
+  "C008": {
+    "customer_id": "C008",
+    "subscription_plan": "Standard Monthly",
+    "subscription_status": "past_due",
+    "next_billing_date": "2026-09-10",
+    "payment_method": "Visa ending 9922 (EXPIRED)",
+    "total_refunds_usd": 0.00,
+    "disputed_charges": [],
+    "transactions": [
+      {"transaction_id": "TXN-20260910-001", "date": "2026-09-10", "amount_usd": 19.99, "description": "Standard Monthly Subscription", "status": "failed", "reference": "SUB-2026-09-FAIL"},
+      {"transaction_id": "TXN-20260810-001", "date": "2026-08-10", "amount_usd": 19.99, "description": "Standard Monthly Subscription", "status": "completed", "reference": "SUB-2026-08"}
+    ]
+  },
+  "C009": {
+    "customer_id": "C009",
+    "subscription_plan": "Premium Annual",
+    "subscription_status": "active",
+    "next_billing_date": "2027-09-25",
+    "payment_method": "Amex ending 7700",
+    "total_refunds_usd": 0.00,
+    "disputed_charges": [],
+    "transactions": [
+      {"transaction_id": "TXN-20260925-001", "date": "2026-09-25", "amount_usd": 499.00, "description": "Premium Annual Subscription", "status": "completed", "reference": "PRE-2026-ANN"}
+    ]
+  },
+  "C010": {
+    "customer_id": "C010",
+    "subscription_plan": "Standard Monthly",
+    "subscription_status": "active",
+    "next_billing_date": "2026-10-01",
+    "payment_method": "Visa ending 1234",
+    "total_refunds_usd": 0.00,
+    "disputed_charges": [],
+    "transactions": [
+      {"transaction_id": "TXN-20260901-001", "date": "2026-09-01", "amount_usd": 19.99, "description": "Standard Monthly Subscription", "status": "completed", "reference": "SUB-2026-09"}
+    ]
+  }
+}

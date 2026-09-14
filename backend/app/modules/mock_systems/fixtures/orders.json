@@ -1,0 +1,160 @@
+{
+  "C001": [
+    {
+      "order_id": "ORD-2026-C001-003",
+      "customer_id": "C001",
+      "product_name": "Nexus Pro Plugin Bundle",
+      "sku": "NXS-PLG-PRO-001",
+      "quantity": 1,
+      "unit_price_usd": 149.00,
+      "total_usd": 149.00,
+      "order_date": "2026-09-10",
+      "expected_delivery": "2026-09-13",
+      "actual_delivery": "2026-09-13",
+      "status": "delivered",
+      "tracking_number": "1Z999AA10123456781",
+      "fulfillment_notes": "",
+      "shipping_events": [
+        {"timestamp": "2026-09-10T14:30:00Z", "location": "San Francisco, CA", "status": "picked_up", "description": "Package picked up from fulfillment center"},
+        {"timestamp": "2026-09-11T08:15:00Z", "location": "Salt Lake City, UT", "status": "in_transit", "description": "In transit to destination hub"},
+        {"timestamp": "2026-09-12T19:45:00Z", "location": "Chicago, IL", "status": "arrived_hub", "description": "Arrived at regional hub"},
+        {"timestamp": "2026-09-13T10:20:00Z", "location": "Detroit, MI", "status": "out_for_delivery", "description": "Out for delivery"},
+        {"timestamp": "2026-09-13T14:55:00Z", "location": "Detroit, MI", "status": "delivered", "description": "Delivered — signed by S. MITCHELL"}
+      ]
+    }
+  ],
+  "C002": [
+    {
+      "order_id": "ORD-2026-C002-001",
+      "customer_id": "C002",
+      "product_name": "Enterprise Hardware Token (x10)",
+      "sku": "NXS-HW-TOK-010",
+      "quantity": 10,
+      "unit_price_usd": 45.00,
+      "total_usd": 450.00,
+      "order_date": "2026-09-01",
+      "expected_delivery": "2026-09-05",
+      "actual_delivery": "2026-09-05",
+      "status": "delivered",
+      "tracking_number": "1Z999AA10123456782",
+      "fulfillment_notes": "Priority shipping — Enterprise SLA",
+      "shipping_events": [
+        {"timestamp": "2026-09-01T09:00:00Z", "location": "Austin, TX", "status": "picked_up", "description": "Picked up"},
+        {"timestamp": "2026-09-05T11:30:00Z", "location": "San Jose, CA", "status": "delivered", "description": "Delivered — signed by M. CHEN"}
+      ]
+    }
+  ],
+  "C003": [
+    {
+      "order_id": "ORD-2026-C003-001",
+      "customer_id": "C003",
+      "product_name": "Design Assets Pack - September 2026",
+      "sku": "NXS-DAP-SEP-2026",
+      "quantity": 1,
+      "unit_price_usd": 89.99,
+      "total_usd": 89.99,
+      "order_date": "2026-09-05",
+      "expected_delivery": "2026-09-08",
+      "actual_delivery": null,
+      "status": "lost",
+      "tracking_number": "1Z999AA10123456783",
+      "fulfillment_notes": "Carrier marked delivered but GPS scan at hub — possible misdelivery",
+      "shipping_events": [
+        {"timestamp": "2026-09-05T11:00:00Z", "location": "San Francisco, CA", "status": "picked_up", "description": "Package picked up"},
+        {"timestamp": "2026-09-06T07:30:00Z", "location": "Los Angeles, CA", "status": "in_transit", "description": "In transit"},
+        {"timestamp": "2026-09-07T14:00:00Z", "location": "Phoenix, AZ", "status": "arrived_hub", "description": "Arrived at Phoenix hub"},
+        {"timestamp": "2026-09-08T09:15:00Z", "location": "Phoenix, AZ", "status": "delivered", "description": "Delivered (hub GPS scan — not confirmed at door)"}
+      ]
+    }
+  ],
+  "C004": [
+    {
+      "order_id": "ORD-2026-C004-002",
+      "customer_id": "C004",
+      "product_name": "Nexus Standard Merchandise Bundle",
+      "sku": "NXS-MERCH-STD-001",
+      "quantity": 1,
+      "unit_price_usd": 45.00,
+      "total_usd": 45.00,
+      "order_date": "2026-09-03",
+      "expected_delivery": "2026-09-08",
+      "actual_delivery": null,
+      "status": "delayed",
+      "tracking_number": "1Z999AA10123456784",
+      "fulfillment_notes": "Held at Memphis hub due to weather delay. New ETA: Sep 14.",
+      "shipping_events": [
+        {"timestamp": "2026-09-03T13:00:00Z", "location": "Denver, CO", "status": "picked_up", "description": "Picked up"},
+        {"timestamp": "2026-09-05T08:00:00Z", "location": "Memphis, TN", "status": "arrived_hub", "description": "Arrived at hub"},
+        {"timestamp": "2026-09-05T23:00:00Z", "location": "Memphis, TN", "status": "held", "description": "Package held: severe weather delay (Hurricane Helene landfall)"},
+        {"timestamp": "2026-09-10T06:00:00Z", "location": "Memphis, TN", "status": "in_transit", "description": "Operations resumed — package moving"}
+      ]
+    }
+  ],
+  "C005": [
+    {
+      "order_id": "ORD-2026-C005-003",
+      "customer_id": "C005",
+      "product_name": "Premium Camera Accessory Kit",
+      "sku": "NXS-CAM-ACC-PRO",
+      "quantity": 1,
+      "unit_price_usd": 189.00,
+      "total_usd": 189.00,
+      "order_date": "2026-08-20",
+      "expected_delivery": "2026-08-25",
+      "actual_delivery": "2026-08-27",
+      "status": "return_initiated",
+      "tracking_number": "1Z999AA10123456785",
+      "fulfillment_notes": "Customer received wrong color variant. Return label sent 2026-08-28.",
+      "shipping_events": [
+        {"timestamp": "2026-08-20T10:00:00Z", "location": "Austin, TX", "status": "picked_up", "description": "Picked up"},
+        {"timestamp": "2026-08-27T15:30:00Z", "location": "Moscow Region", "status": "delivered", "description": "Delivered — signed by E. VOLKOV"},
+        {"timestamp": "2026-08-28T10:00:00Z", "location": "Moscow Region", "status": "return_initiated", "description": "Return initiated: wrong item received"}
+      ]
+    }
+  ],
+  "C006": [],
+  "C007": [
+    {
+      "order_id": "ORD-2026-C007-001",
+      "customer_id": "C007",
+      "product_name": "Enterprise Onboarding Kit (25 users)",
+      "sku": "NXS-ENT-ONBRD-025",
+      "quantity": 1,
+      "unit_price_usd": 750.00,
+      "total_usd": 750.00,
+      "order_date": "2026-08-25",
+      "expected_delivery": "2026-09-01",
+      "actual_delivery": "2026-09-01",
+      "status": "delivered",
+      "tracking_number": "1Z999AA10123456787",
+      "fulfillment_notes": "Enterprise priority handled",
+      "shipping_events": [
+        {"timestamp": "2026-08-25T08:00:00Z", "location": "Austin, TX", "status": "picked_up", "description": "Picked up"},
+        {"timestamp": "2026-09-01T10:00:00Z", "location": "Tokyo, Japan", "status": "delivered", "description": "Delivered — signed by A. NAKAMURA"}
+      ]
+    }
+  ],
+  "C008": [],
+  "C009": [],
+  "C010": [
+    {
+      "order_id": "ORD-2026-C010-001",
+      "customer_id": "C010",
+      "product_name": "Nexus Starter Pack",
+      "sku": "NXS-STR-001",
+      "quantity": 1,
+      "unit_price_usd": 29.00,
+      "total_usd": 29.00,
+      "order_date": "2026-09-01",
+      "expected_delivery": "2026-09-07",
+      "actual_delivery": "2026-09-07",
+      "status": "delivered",
+      "tracking_number": "1Z999AA10123456790",
+      "fulfillment_notes": "",
+      "shipping_events": [
+        {"timestamp": "2026-09-01T12:00:00Z", "location": "Austin, TX", "status": "picked_up", "description": "Picked up"},
+        {"timestamp": "2026-09-07T14:00:00Z", "location": "Boston, MA", "status": "delivered", "description": "Delivered"}
+      ]
+    }
+  ]
+}

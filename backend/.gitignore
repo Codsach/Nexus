@@ -1,0 +1,36 @@
+# Environment & Secret Files
+.env
+.env.*
+!.env.example
+
+# Databases & Local Storage
+*.db
+*.sqlite
+*.sqlite3
+nexus.db
+
+# Python Caches & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Code Quality Caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
