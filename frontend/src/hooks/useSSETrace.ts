@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { TraceEvent } from '../types'
+import { apiBaseUrl } from '../lib/api'
 
 export function useSSETrace(ticketId: string | null) {
   const [events, setEvents] = useState<TraceEvent[]>([])
@@ -13,7 +14,8 @@ export function useSSETrace(ticketId: string | null) {
     setEvents([])
     setDone(false)
 
-    const es = new EventSource(`/api/v1/coordinator/tickets/${ticketId}/trace`)
+    const sseUrl = `${apiBaseUrl}/coordinator/tickets/${ticketId}/trace`
+    const es = new EventSource(sseUrl)
     esRef.current = es
 
     es.onopen = () => setConnected(true)
@@ -38,6 +40,7 @@ export function useSSETrace(ticketId: string | null) {
 
     es.onerror = () => {
       setConnected(false)
+      setDone(true) // Mark done on error so polling fallback can retrieve results
       es.close()
     }
 

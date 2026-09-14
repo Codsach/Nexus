@@ -76,11 +76,18 @@ export default function ChatIntakePage() {
     },
   })
 
-  // Poll ticket once done to get final response
+  // Poll ticket state
   const { data: ticketData, refetch } = useQuery({
     queryKey: ['ticket', ticketId],
     queryFn: () => getTicket(ticketId!),
-    enabled: false,
+    enabled: Boolean(ticketId),
+    refetchInterval: (query) => {
+      const status = query.state.data?.data?.status
+      if (status === 'resolved' || status === 'escalated') {
+        return false
+      }
+      return 1500
+    },
   })
 
   useEffect(() => {

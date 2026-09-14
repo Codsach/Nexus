@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useAppStore } from '../../store/appStore'
 import type { Role } from '../../types'
@@ -20,6 +21,14 @@ export default function Navbar() {
     { to: '/escalation', label: 'Escalations Queue', icon: AlertTriangle, roles: ['agent'] as Role[] },
     { to: '/dashboard', label: 'Analytics Dashboard', icon: LayoutDashboard, roles: ['manager'] as Role[] },
   ]
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search)
+    const roleParam = params.get('role') as Role
+    if (roleParam && ['customer', 'agent', 'manager'].includes(roleParam) && role !== roleParam) {
+      setRole(roleParam)
+    }
+  }, [location.search, role, setRole])
 
   const visibleLinks = navLinks.filter((l) => l.roles.includes(role))
 

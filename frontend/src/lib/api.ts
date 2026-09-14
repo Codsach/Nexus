@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const rawBaseUrl = import.meta.env.VITE_API_BASE_URL || '/api/v1'
 // Normalize apiBaseUrl (ensure no trailing slash)
-const apiBaseUrl = rawBaseUrl.replace(/\/$/, '')
+export const apiBaseUrl = rawBaseUrl.replace(/\/$/, '')
 const hostUrl = apiBaseUrl.replace(/\/api\/v1$/, '')
 
 const api = axios.create({
