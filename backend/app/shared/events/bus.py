@@ -12,6 +12,8 @@ from app.shared.schemas.models import TraceEvent, TraceEventType
 
 
 _queues: dict[str, list[asyncio.Queue]] = {}
+_history: dict[str, list[TraceEvent]] = {}
+_closed: dict[str, bool] = {}
 
 
 def _get_queues(ticket_id: str) -> list[asyncio.Queue]:
@@ -19,7 +21,8 @@ def _get_queues(ticket_id: str) -> list[asyncio.Queue]:
 
 
 async def emit(event: TraceEvent) -> None:
-    """Publish a trace event to all subscribers for this ticket."""
+    """Publish a trace event to all subscribers for this ticket and store in history."""
+    _history.setdefault(event.ticket_id, []).append(event)
     queues = _get_queues(event.ticket_id)
     for q in queues:
         await q.put(event)
@@ -27,6 +30,14 @@ async def emit(event: TraceEvent) -> None:
 
 async def subscribe(ticket_id: str) -> AsyncGenerator[TraceEvent, None]:
     """Subscribe to trace events for a ticket via async generator (used by SSE endpoint)."""
+    # Replay past events emitted before subscriber connected
+    history = list(_history.get(ticket_id, []))
+    for past_event in history:
+        yield past_event
+
+    if _closed.get(ticket_id, False):
+        return
+
     q: asyncio.Queue = asyncio.Queue()
     _get_queues(ticket_id).append(q)
     try:
@@ -45,6 +56,7 @@ async def subscribe(ticket_id: str) -> AsyncGenerator[TraceEvent, None]:
 
 async def close_stream(ticket_id: str) -> None:
     """Send sentinel to all subscribers to signal end of stream."""
+    _closed[ticket_id] = True
     queues = _get_queues(ticket_id)
     for q in queues:
         await q.put(None)
@@ -65,3 +77,4 @@ def make_event(
         agent_name=agent_name,
         payload=payload,
     )
+

@@ -123,6 +123,12 @@ async def stream_trace(ticket_id: str):
                 "payload": event.payload,
                 "timestamp": event.timestamp.isoformat(),
             }
-            yield {"data": json.dumps(data)}
+    return EventSourceResponse(
+        event_generator(),
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+            "Connection": "keep-alive",
+        },
+    )
 
-    return EventSourceResponse(event_generator())
